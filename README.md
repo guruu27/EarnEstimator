@@ -1,0 +1,2 @@
+# EarnEstimator: Empowering Income Projections
+This project seeks to create a predictive model for calculating developer pay using a varied range of variables from the Stack Overflow Annual Developer Survey dataset. Using vital details such as geographical location, developer jobs, education levels, and employment types, the suggested regression model attempts to unravel the complex relationship between these characteristics and developers' annual pay.
