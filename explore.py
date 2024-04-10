@@ -76,7 +76,7 @@ def show_explore_page():
     )
 
     data = df.groupby(["Country"])["Salary"].mean().sort_values(ascending=True)
-    st.bar_chart(data)
+    st.area_chart(data)
 
     st.write(
         """
@@ -86,3 +86,12 @@ def show_explore_page():
 
     data = df.groupby(["WorkExp"])["Salary"].mean().sort_values(ascending=True)
     st.line_chart(data)
+
+    st.write(
+        """
+    #### Mean Salary Based On Education
+    """
+    )
+
+    data = df.groupby(["EdLevel"])["Salary"].mean().sort_values(ascending=True)
+    st.bar_chart(data)
